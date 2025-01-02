@@ -1,21 +1,9 @@
-'use client';
-import  { useState, useRef, Suspense } from "react";
+'use client'
+import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
-import Navbar from './sections/Navbar.jsx';
-import Hero from './sections/Hero.jsx';
-import About from './sections/About.jsx';
-import Footer from './sections/Footer.jsx';
-import Contact from './sections/Contact.jsx';
-import Clients from './sections/Clients.jsx';
-import Projects1 from './sections/Projects1.jsx';
-import Projects2 from './sections/Projects2.jsx';
-import Projects3 from './sections/Projects3.jsx';
-import Projects4 from './sections/Projects4.jsx';
-import Features from './sections/Features.jsx';
 
-// Stars Component
 const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
@@ -42,7 +30,6 @@ const Stars = (props) => {
   );
 };
 
-// StarsCanvas Component
 const StarsCanvas = () => {
   return (
     <div className='w-full h-auto fixed inset-0 z-[-1]'>
@@ -57,23 +44,4 @@ const StarsCanvas = () => {
   );
 };
 
-const App = () => {
-  return (
-    <main className="max-w-7xl mx-auto relative">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects1 />
-      <Projects2 />
-      <Projects3 />
-      <Projects4 />
-      <Clients />
-      <Features />
-      <Contact />
-      <Footer />
-      <StarsCanvas />
-    </main>
-  );
-};
-
-export default App;
+export default StarsCanvas;
