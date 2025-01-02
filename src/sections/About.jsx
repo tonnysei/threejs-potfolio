@@ -47,7 +47,7 @@ const About = () => {
     {/* Who Are We Section */}
     <div className="col-span-1 md:col-span-2 xl:col-span-3 xl:row-span-3">
       <div className="grid-container">
-        <div class="flex justify-center items-center"><img src="assets/grid3.png" alt="grid-3" className=" w-[550px] sm:h-[266px] h-fit  rounded-2xl" /></div>
+        <div class="flex justify-center items-center"><img src="assets/grid3.png" alt="grid-3" className=" w-[550px]  h-fit  rounded-2xl" /></div>
         <div>
           <p className="grid-headtext">Who Are We?</p>
           <p className="grid-subtext">
