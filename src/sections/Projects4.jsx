@@ -4,13 +4,13 @@ import { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Center, OrbitControls } from '@react-three/drei';
 
-import { myProjects } from '../constants/index.js';
+import { myProjects4 } from '../constants/index.js';
 import CanvasLoader from '../components/Loading.jsx';
 import DemoComputer from '../components/DemoComputer.jsx';
 
-const projectCount = myProjects.length;
+const projectCount = myProjects4.length;
 
-const Projects = () => {
+const Projects4 = () => {
   const [selectedProjectIndex, setSelectedProjectIndex] = useState(0);
 
   const handleNavigation = (direction) => {
@@ -27,11 +27,12 @@ const Projects = () => {
     gsap.fromTo(`.animatedText`, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' });
   }, [selectedProjectIndex]);
 
-  const currentProject = myProjects[selectedProjectIndex];
+  const currentProject = myProjects4[selectedProjectIndex];
+  
 
   return (
     <section className="c-space my-20">
-      <p className="head-text">My Selected Work</p>
+      <p className="head-text">Portfolio Websites</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -99,4 +100,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Projects4;

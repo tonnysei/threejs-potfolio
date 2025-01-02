@@ -4,8 +4,11 @@ import Footer from './sections/Footer.jsx';
 import Navbar from './sections/Navbar.jsx';
 import Contact from './sections/Contact.jsx';
 import Clients from './sections/Clients.jsx';
-import Projects from './sections/Projects.jsx';
-import WorkExperience from './sections/Experience.jsx';
+import Projects1 from './sections/Projects1.jsx';
+import Projects2 from './sections/Projects2.jsx';
+import Projects3 from './sections/Projects3.jsx';
+import Projects4 from './sections/Projects4.jsx';
+import Features from './sections/Features.jsx';
 
 const App = () => {
   return (
@@ -13,9 +16,12 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-      <Projects />
+      <Projects1 />
+      <Projects2 />
+      <Projects3 />
+      <Projects4 />
       <Clients />
-      <WorkExperience />
+      <Features/>
       <Contact />
       <Footer />
     </main>
