@@ -59,8 +59,8 @@ export const clientReviews = [
 
 export const myProjects1 = [
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    title: 'Sogim store',
+    desc: 'a full functional e-commerce website with categories, an ordering gateway and a user-friendly interface.  an admin-panel for the owner to make and edit categories and products.',
     subdesc:
       'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
     href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',

@@ -45,7 +45,7 @@ const About = () => {
     </div>
 
     {/* Who Are We Section */}
-    <div className="col-span-1 md:col-span-2 xl:col-span-2 xl:row-span-3">
+    <div className="col-span-1 md:col-span-2 xl:col-span-1 xl:row-span-3">
       <div className="grid-container">
       <div className="flex justify-center items-center">
         <img 
@@ -60,6 +60,36 @@ const About = () => {
             At Nexura, we are a team of three passionate programmers committed to delivering innovative web solutions. With expertise in both frontend and backend technologies, we work collaboratively to create dynamic, user-friendly websites that help businesses thrive in the digital world.
           </p>
         </div>
+      </div>
+    </div>
+
+    <div className="col-span-1 md:col-span-2 xl:col-span-1 xl:row-span-3">
+      <div className="grid-container">
+      <div className="flex justify-center items-center">
+        <img 
+          src="assets/grid5.png" 
+          alt="grid-3" 
+          className="max-w-full h-auto rounded-2xl" 
+        />
+      </div>
+      <div>
+          
+          <p className="grid-subtext">
+            With expertise in both frontend and backend technologies, we work collaboratively to create dynamic, user-friendly websites that help businesses thrive in the digital world.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-span-1 md:col-span-2 xl:col-span-1 xl:row-span-3">
+      <div className="grid-container">
+      <div className="flex justify-center items-center">
+        <img 
+          src="assets/grid4.png" 
+          alt="grid-3" 
+          className="max-w-full h-auto rounded-2xl" 
+        />
+      </div>
       </div>
     </div>
     

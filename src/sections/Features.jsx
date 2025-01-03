@@ -1,4 +1,4 @@
-import { TbColorSwatch, TbBolt, TbTools, TbClock } from "react-icons/tb";
+import { TbColorSwatch,TbClock } from "react-icons/tb";
 import { FaMoneyBillWave } from "react-icons/fa";
 
 const Features = () => {
@@ -38,7 +38,7 @@ const Features = () => {
             </div>
             <h3 className="mt-6 text-gray-400">Fully Customizable</h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-            Personalize every detail of your site to match your brand’s unique identity, from design to functionality, ensuring it perfectly aligns with your vision..
+            Tailor every detail to match your brand's unique identity
             </p>
           </div>
 
@@ -56,7 +56,7 @@ const Features = () => {
             </div>
             <h3 className="mt-6 text-gray-400">Lightning-Fast Delivery</h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-            Our efficient, collaborative team delivers high-quality results swiftly, meeting deadlines without compromising on standards.
+            High-quality results delivered swiftly without compromising standards
             </p>
           </div>
 
@@ -74,7 +74,7 @@ const Features = () => {
             </div>
             <h3 className="mt-6 text-gray-400">Affordable & Negotiable Pricing</h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-            We offer flexible, negotiable pricing tailored to your budget, ensuring you receive exceptional value and high-quality results.
+               Flexible, negotiable pricing to fit your budget
             </p>
           </div>
         </div>

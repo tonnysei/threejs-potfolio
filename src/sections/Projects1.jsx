@@ -41,7 +41,7 @@ const Projects1 = () => {
       <p className="head-text">E-Commerce Websites</p>
 
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200 bg-black-200 rounded-xl">
+        <div className="flex flex-col gap-5 relative sm:p-10 py-6 px-5 shadow-2xl shadow-black-200 bg-black-200 rounded-xl">
           <div className="absolute top-0 right-0">
             <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
           </div>
@@ -54,7 +54,7 @@ const Projects1 = () => {
             <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
 
             <p className="animatedText">{currentProject.desc}</p>
-            <p className="animatedText">{currentProject.subdesc}</p>
+            {/* <p className="animatedText">{currentProject.subdesc}</p> */}
           </div>
 
           <div className="flex items-center justify-between flex-wrap gap-5">
@@ -76,7 +76,7 @@ const Projects1 = () => {
             </a>
           </div>
 
-          <div className="flex justify-between items-center mt-7">
+          <div className="flex justify-between items-center mt-1">
             <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
               <img src="/assets/left-arrow.png" alt="left arrow" />
             </button>
