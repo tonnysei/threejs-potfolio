@@ -38,9 +38,7 @@ const Features = () => {
             </div>
             <h3 className="mt-6 text-gray-400">Fully Customizable</h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              Tailor every aspect of your site to reflect your brand’s identity,
-              from design elements to functionality, ensuring it aligns with your
-              vision.
+            Personalize every detail of your site to match your brand’s unique identity, from design to functionality, ensuring it perfectly aligns with your vision..
             </p>
           </div>
 
@@ -58,9 +56,7 @@ const Features = () => {
             </div>
             <h3 className="mt-6 text-gray-400">Lightning-Fast Delivery</h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              We pride ourselves on delivering results in record time. Our
-              collaborative team ensures every task is executed efficiently,
-              meeting your deadlines without compromising on quality.
+            Our efficient, collaborative team delivers high-quality results swiftly, meeting deadlines without compromising on standards.
             </p>
           </div>
 
@@ -78,9 +74,7 @@ const Features = () => {
             </div>
             <h3 className="mt-6 text-gray-400">Affordable & Negotiable Pricing</h3>
             <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
-              We work with you to find a pricing solution that fits your budget.
-              Our flexible approach means we tailor costs to your specific needs
-              while ensuring you receive high-quality results.
+            We offer flexible, negotiable pricing tailored to your budget, ensuring you receive exceptional value and high-quality results.
             </p>
           </div>
         </div>

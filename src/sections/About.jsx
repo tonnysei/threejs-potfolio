@@ -45,13 +45,19 @@ const About = () => {
     </div>
 
     {/* Who Are We Section */}
-    <div className="col-span-1 md:col-span-2 xl:col-span-3 xl:row-span-3">
+    <div className="col-span-1 md:col-span-2 xl:col-span-2 xl:row-span-3">
       <div className="grid-container">
-        <div class="flex justify-center items-center"><img src="assets/grid3.png" alt="grid-3" className=" w-[550px] sm:h-[266px] h-fit  rounded-2xl" /></div>
+      <div className="flex justify-center items-center">
+        <img 
+          src="assets/grid3.png" 
+          alt="grid-3" 
+          className="max-w-full h-auto rounded-2xl" 
+        />
+      </div>
         <div>
           <p className="grid-headtext">Who Are We?</p>
           <p className="grid-subtext">
-            At [Agency Name], we are a team of three passionate developers committed to delivering innovative web solutions. With expertise in both frontend and backend technologies, we work collaboratively to create dynamic, user-friendly websites that help businesses thrive in the digital world.
+            At Nexura, we are a team of three passionate programmers committed to delivering innovative web solutions. With expertise in both frontend and backend technologies, we work collaboratively to create dynamic, user-friendly websites that help businesses thrive in the digital world.
           </p>
         </div>
       </div>
