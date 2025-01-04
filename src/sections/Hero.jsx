@@ -24,16 +24,16 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
-      <div className="w-full mx-auto flex flex-col mt-[150px] sm:mt-24  c-space gap-3">
-        <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
+      <div className="w-full mx-auto flex flex-col mt-[150px] sm:mt-24  c-space gap-3 ">
+        <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans z-50">
           Welcome to HexaWeb <span className="waving-hand">👋</span>
         </p>
-        <p className="hero_tag text-gray_gradient">
+        <p className="hero_tag text-gray_gradient z-50">
           Transforming Ideas into Stunning Websites 
         </p>
       </div>
 
-      <div className="w-full h-full absolute inset-0">
+      <div className="w-full h-full absolute inset-0 z-10">
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
 
