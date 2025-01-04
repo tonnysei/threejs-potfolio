@@ -11,7 +11,7 @@ export function HackerRoom(props) {
 
   // Initial rotation and position
   const [rotation, setRotation] = useState([0, Math.PI / 2.5, 0]); // 60 degrees on Y-axis
-  const position = [0, -6, -2]; // Adjust position as needed
+  const position = [0, -6.5, -2]; // Adjust position as needed
 
   // Handle drag gestures for manual rotation
   const bind = useDrag(({ delta: [dx, dy] }) => {
