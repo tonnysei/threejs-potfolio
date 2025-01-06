@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
-      <div className="w-full mx-auto flex flex-col mt-[150px] sm:mt-24  c-space gap-3 ">
+      <div className="w-full mx-auto flex flex-col mt-[120px] sm:mt-24  c-space gap-3 ">
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans z-50">
           Welcome to HexaWeb <span className="waving-hand">👋</span>
         </p>

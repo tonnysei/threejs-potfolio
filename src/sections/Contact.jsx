@@ -95,7 +95,7 @@ const ContactUs = () => {
             <div className="w-full p-2">
               <button
                 type="submit"
-                className="mx-auto flex rounded border-0 bg-indigo-500 py-3 px-8 text-2xl text-white hover:bg-indigo-600 focus:outline-none"
+                className="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-6 text-xl text-white hover:bg-indigo-600 focus:outline-none"
               >
                 Send Message
               </button>
