@@ -30,7 +30,7 @@ const Projects1 = () => {
   const currentProject = myProjects1[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20" id="services">
+    <section className="c-space my-20">
       <div class="max-w-3xl mx-auto text-center mt-16 mb-9">
           <h1 class="text-5xl font-bold text-gray-900 leading-tight mb-2 pb-4 relative">
               <span class="bg-clip-text text-transparent bg-gradient-to-r to-purple-500 from-blue-700">Our services</span>
@@ -38,8 +38,8 @@ const Projects1 = () => {
           </h1>
       </div>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
-        <div className="flex flex-col gap-5 relative sm:p-10 py-6 px-5 shadow-2xl shadow-black-200 bg-black-200 rounded-xl">
+      <div className="grid lg:grid-cols-2 grid-cols-1 mt-11 gap-4 w-full">
+        <div className="flex flex-col gap-4 relative sm:p-7 py-4 px-5 shadow-2xl shadow-black-200 z-50 bg-black/70">
           <div className="absolute top-0 right-0">
             <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
           </div>
@@ -48,11 +48,11 @@ const Projects1 = () => {
             <img className="w-10 h-10 shadow-sm" src={currentProject.logo} alt="logo" />
           </div>
 
-          <div className="flex flex-col gap-5 text-white-600 my-5">
+          <div className="flex flex-col gap-5 text-white-600 my-4">
             <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
 
             <p className="animatedText">{currentProject.desc}</p>
-            {/* <p className="animatedText">{currentProject.subdesc}</p> */}
+            <p className="animatedText">{currentProject.subdesc}</p>
           </div>
 
           <div className="flex items-center justify-between flex-wrap gap-5">
@@ -74,7 +74,7 @@ const Projects1 = () => {
             </a>
           </div>
 
-          <div className="flex justify-between items-center mt-1">
+          <div className="flex justify-between items-center mt-5">
             <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
               <img src="/assets/left-arrow.png" alt="left arrow" />
             </button>
@@ -92,7 +92,7 @@ const Projects1 = () => {
             <Center>
               <Suspense fallback={<CanvasLoader />}>
                 <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                  <DemoComputer />
+                  <DemoComputer texture={currentProject.texture} />
                 </group>
               </Suspense>
             </Center>

@@ -60,9 +60,9 @@ export const clientReviews = [
 export const myProjects1 = [
   {
     title: 'e-commerce - Sogim store',
-    desc: 'a full functional e-commerce website with categories, an ordering gateway and a user-friendly interface.  an admin-panel for the owner to make and edit categories and products.',
+    desc: 'This e-commerce website template has easy-to-use product categories, a smooth ordering system, and a simple, user-friendly design.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+      'It includes an admin panel where owners can manage products and categories, making it a great choice for any online store.',
     href: 'https://sogim-store.vercel.app',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/project-logo4.png',
@@ -97,9 +97,9 @@ export const myProjects1 = [
   },
   {
     title: 'Business website - Grilli',
-    desc: 'a fully responsive website example for a fictional restaurant. it includes a menu, a gallery, a contact form and a reservation form.',
+    desc: 'This restaurant website template combines stunning design with essential features like an interactive menu, immersive gallery, easy contact form, and a seamless reservation system.',
     subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
+      'Fully responsive, it delivers a flawless experience on any device, making it the perfect choice to showcase a modern restaurant and attract diners.',
     href: 'https://resaturant-website.vercel.app',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.png',
@@ -130,14 +130,15 @@ export const myProjects1 = [
         name: 'Framer Motion',
         path: '/assets/framer.png',
       },
+      
     ],
   },
   {
-    title: 'e-commerce - khitandbead',
-    desc: 'a landing page website with produt details and an ordering gateway .  an admin-panel for the owner to make and edit categories and products.',
+    title: 'portfolio template - photographer',
+    desc: 'This photographer portfolio template is a visually striking and thoughtfully designed website that captivates viewers at first glance.',
     subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://sogim-store.vercel.app/',
+      ' Crafted with precision and creativity, it offers a seamless blend of aesthetic appeal and functionality, making it the perfect showcase for professional photographers.',
+    href: 'https://photographer-portfolio-rho-seven.vercel.app/',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/project-logo4.png',
     logoStyle: {
@@ -167,6 +168,44 @@ export const myProjects1 = [
         name: 'Framer Motion',
         path: '/assets/framer.png',
       },
+    ],
+  },
+  
+  {
+    title: 'e-commerce - khitandbead',
+    desc: 'This dentist website template features appointment booking, service details, and a contact form.',
+    subdesc:
+      'Its modern, responsive design is perfect for dental clinics to attract and assist patients online.',
+    href: 'https://e-commerce-jewrly.vercel.app/',
+    texture: '/textures/project/project4.mp4',
+    logo: '/assets/project-logo4.png',
+    logoStyle: {
+      backgroundColor: '#0E1F38',
+      border: '0.2px solid #0E2D58',
+      boxShadow: '0px 0px 60px 0px #2F67B64D',
+    },
+    spotlight: '/assets/spotlight4.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/figmalogo.png',
+      },{
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      
     ],
   }
   
