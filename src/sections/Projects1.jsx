@@ -38,8 +38,8 @@ const Projects1 = () => {
           </h1>
       </div>
 
-      <div className="grid lg:grid-cols-2 grid-cols-1 mt-11 gap-4 w-full">
-        <div className="flex flex-col gap-4 relative sm:p-7 py-4 px-5 shadow-2xl shadow-black-200 z-50 bg-black/70">
+      <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
+        <div className="flex flex-col gap-4 relative sm:p-10 py-7 px-5 shadow-2xl shadow-black-200">
           <div className="absolute top-0 right-0">
             <img src={currentProject.spotlight} alt="spotlight" className="w-full h-96 object-cover rounded-xl" />
           </div>
@@ -48,7 +48,7 @@ const Projects1 = () => {
             <img className="w-10 h-10 shadow-sm" src={currentProject.logo} alt="logo" />
           </div>
 
-          <div className="flex flex-col gap-5 text-white-600 my-4">
+          <div className="flex flex-col gap-5 text-white-600 my-5">
             <p className="text-white text-2xl font-semibold animatedText">{currentProject.title}</p>
 
             <p className="animatedText">{currentProject.desc}</p>
@@ -65,16 +65,16 @@ const Projects1 = () => {
             </div>
 
             <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
+              className="flex items-center gap-2 cursor-pointer text-white-600 bg-black-300 p-2 rounded-md"
               href={currentProject.href}
               target="_blank"
               rel="noreferrer">
-              <p>Check Live Site</p>
+              <p>open the website</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>
 
-          <div className="flex justify-between items-center mt-5">
+          <div className="flex justify-between items-center mt-4">
             <button className="arrow-btn" onClick={() => handleNavigation('previous')}>
               <img src="/assets/left-arrow.png" alt="left arrow" />
             </button>
