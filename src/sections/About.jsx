@@ -57,7 +57,7 @@ const About = () => {
         <div>
           <p className="grid-headtext">Who Are We?</p>
           <p className="grid-subtext">
-            At Nexura, we are a team of three passionate programmers committed to delivering innovative web solutions. With expertise in both frontend and backend technologies, we work collaboratively to create dynamic, user-friendly websites that help businesses thrive in the digital world.
+            At HexaWeb, we are a team of three passionate programmers committed to delivering innovative web solutions.
           </p>
         </div>
       </div>
