@@ -12,7 +12,13 @@ const DemoComputer = (props) => {
   const { nodes, materials, animations } = useGLTF('/models/computer.glb');
   const { actions } = useAnimations(animations, group);
 
-  const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/project1.mp4');
+  const txt = useVideoTexture(props.texture, {
+    start: true, // Automatically starts video playback
+    muted: true, // Prevents autoplay issues
+    loop: true, // Ensures seamless looping
+    disableFullscreen: true,
+  });
+  
 
   useEffect(() => {
     if (txt) {
@@ -31,17 +37,17 @@ const DemoComputer = (props) => {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
-        <mesh
-          name="monitor-screen"
-          // castShadow
-          // receiveShadow
-          geometry={nodes['monitor-screen'].geometry}
-          material={nodes['monitor-screen'].material}
-          position={[0.127, 1.831, 0.511]}
-          rotation={[1.571, -0.005, 0.031]}
-          scale={[0.661, 0.608, 0.401]}>
-          <meshBasicMaterial map={txt} toneMapped={false} />
-        </mesh>
+      <mesh
+        name="monitor-screen"
+        geometry={nodes['monitor-screen'].geometry}
+        material={nodes['monitor-screen'].material}
+        position={[0.127, 1.831, 0.511]}
+        rotation={[1.571, -0.005, 0.031]}
+        scale={[0.661, 0.608, 0.401]}
+      >
+        <meshBasicMaterial map={txt} toneMapped={false} />
+      </mesh>
+
         <group name="RootNode" position={[0, 1.093, 0]} rotation={[-Math.PI / 2, 0, -0.033]} scale={0.045}>
           <group
             name="Screen001"
