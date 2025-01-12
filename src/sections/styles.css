@@ -1,0 +1,180 @@
+/* General body styles */
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: #111;
+    overflow: auto; /* Allow scrolling */
+  }
+  
+  /* Center content styling */
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto; /* Change to auto to allow the content to expand */
+  }
+  
+  /* Slider container with perspective */
+  .slideC {
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    width: 362px;
+    height: 272px;
+    margin: 0 auto;
+    margin-top: 200px;
+    overflow: visible; /* Ensure that content inside the slider can overflow */
+  }
+  
+  /* Each individual slide styling */
+  .slide {
+    width: 362px;
+    height: 272px;
+    transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s;
+    position: absolute;
+    top: 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 3D reflection effect */
+  .reflection {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: -60px;
+    border-radius: 12px;
+    transition: transform 500ms ease 0s, opacity 500ms ease 0s, visibility 500ms ease 0s;
+  }
+  
+  /* Slider content inside each slide */
+  .sliderContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 30px;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .sliderContent h2 {
+    margin: 16px 0;
+  }
+  
+  .sliderContent p {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  
+  /* Button container */
+  .btns {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+  }
+  
+  .btns .btn {
+    cursor: pointer;
+  }
+  
+  .btns .btn:last-child {
+    margin-left: 40px;
+  }
+  
+  /* Additional styles for responsiveness (optional) */
+  @media (max-width: 768px) {
+    .slideC {
+      width: 100%;
+      height: 555px;
+    }
+  
+    .slide {
+      width: 100%;
+      height: auto;
+    }
+  
+    .sliderContent {
+      padding: 20px;
+    }
+  
+    .btns {
+      padding-top: 50px;
+    }
+  }
+ /* From Uiverse.io by andrew-demchenk0 */ 
+.card {
+    --font-color: #323232;
+    --bg-color: #e0e0e0;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    background: var(--bg-color);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px 2px #5a5a5a;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    background-color: blueviolet;
+  }
+  
+  .card__descr-wrapper {
+    padding: 15px;
+    display: grid;
+  }
+  
+  .card__title {
+    color: var(--font-color);
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 900;
+    font-size: 16px;
+  }
+  
+  .card__descr {
+    color: var(--font-color);
+  }
+  
+  .svg {
+    width: 25px;
+    height: 25px;
+    transform: translateY(25%);
+    fill: var(--font-color);
+  }
+  
+  .card__links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+  
+  .card__links .link {
+    color: var(--font-color);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  .card__links .link:hover {
+    text-decoration: underline;
+  }
+  

@@ -64,7 +64,7 @@ export const myProjects1 = [
     subdesc:
       'It includes an admin panel where owners can manage products and categories, making it a great choice for any online store.',
     href: 'https://sogim-store.vercel.app',
-    texture: '/textures/project/project4.mp4',
+    texture: '/assets/logo4.png',
     logo: '/assets/project-logo4.png',
     logoStyle: {
       backgroundColor: '#0E1F38',
@@ -101,7 +101,7 @@ export const myProjects1 = [
     subdesc:
       'Fully responsive, it delivers a flawless experience on any device, making it the perfect choice to showcase a modern restaurant and attract diners.',
     href: 'https://resaturant-website.vercel.app',
-    texture: '/textures/project/project5.mp4',
+    texture: '/assets/logo4.png',
     logo: '/assets/project-logo5.png',
     logoStyle: {
       backgroundColor: '#1C1A43',
@@ -139,7 +139,7 @@ export const myProjects1 = [
     subdesc:
       ' Crafted with precision and creativity, it offers a seamless blend of aesthetic appeal and functionality, making it the perfect showcase for professional photographers.',
     href: 'https://photographer-portfolio-rho-seven.vercel.app/',
-    texture: '/textures/project/project4.mp4',
+    texture: '/assets/logo4.png',
     logo: '/assets/project-logo4.png',
     logoStyle: {
       backgroundColor: '#0E1F38',
@@ -177,7 +177,7 @@ export const myProjects1 = [
     subdesc:
       'Its modern, responsive design is perfect for dental clinics to attract and assist patients online.',
     href: 'https://e-commerce-jewrly.vercel.app/',
-    texture: '/textures/project/project4.mp4',
+    texture: '/assests/logo4.png',
     logo: '/assets/project-logo4.png',
     logoStyle: {
       backgroundColor: '#0E1F38',

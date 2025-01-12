@@ -38,7 +38,7 @@ const About = () => {
         <div>
           <p className="grid-headtext">Tech Stack</p>
           <p className="grid-subtext">
-            We specialize in a variety of languages, frameworks, and tools that allow us to build robust and scalable applications.
+            We specialize in a variety of programming languages, frameworks, and tools that allow us to build robust and scalable applications.
           </p>
         </div>
       </div>
