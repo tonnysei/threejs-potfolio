@@ -7,6 +7,9 @@ export default {
         generalsans: ['General Sans', 'sans-serif'],
       },
       colors: {
+        'purpule': '#613fe5',
+        'whitee': '#F6F6F7',
+        'greyy': '#B5B5B5',
         black: {
           DEFAULT: '#000',
           100: '#010103',
@@ -22,6 +25,7 @@ export default {
           600: '#AFB0B6',
           500: '#62646C',
         },
+        
       },
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",

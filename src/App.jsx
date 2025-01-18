@@ -8,7 +8,7 @@ import Hero from './sections/Hero.jsx';
 import About from './sections/About.jsx';
 import Footer from './sections/Footer.jsx';
 import Contact from './sections/Contact.jsx';
-import Projects2 from './sections/Projects2.jsx';
+import Projects4 from './sections/Projects4.jsx';
 import Features from './sections/Features.jsx';
 
 
@@ -61,11 +61,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-      <Projects2 />
-      {/* <Projects2 />
-      <Projects3 />
-      <Projects4 /> */}
-      {/* <Clients /> */}
+      <Projects4 />
+      
       <Features />
       <Contact />
       <Footer />

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import GlowButton from './GlowButton';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -22,10 +23,10 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container mx-auto px-5 py-14" id='contact'>
+    <div className="container mx-auto px-5 py-14 mt-9" id='contact'>
       <div className="mb-12 flex w-full flex-col text-center">
         <h1 className="title-font mb-4 text-4xl font-medium text-white sm:text-5xl">
-          Contact Us
+            Contact Us
         </h1>
         <p className="mx-auto text-xl leading-relaxed lg:w-2/3 text-white-700">
           We are passionate about bringing your ideas to life. Reach out today and let’s start building something amazing together!
@@ -35,7 +36,7 @@ const ContactUs = () => {
       <div className="mx-auto md:w-2/3 lg:w-1/2">
         <div className="-m-2 flex flex-wrap">
           {/* Form */}
-          <form onSubmit={handleSubmit} className="w-full flex flex-wrap">
+          {/* <form onSubmit={handleSubmit} className="w-full flex flex-wrap">
             <div className="w-1/2 p-2">
               <div className="relative">
                 <input
@@ -99,9 +100,11 @@ const ContactUs = () => {
               >
                 Send Message
               </button>
+              
             </div>
-          </form>
 
+          </form> */}
+          <div className="w-full p-2"><GlowButton /></div>
           {/* Footer */}
           <div className="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
             <a className="text-indigo-400 text-xl" href="mailto:example@email.com">
