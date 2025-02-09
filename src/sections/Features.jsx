@@ -3,7 +3,7 @@ import { FaMoneyBillWave } from "react-icons/fa";
 
 const Features = () => {
   return (
-    <div className="bg-black rounded-3xl overflow-hidden">
+    <div className="bg-black rounded-3xl overflow-hidden ml-4 mr-4">
       <section
         id="features"
         className="relative block px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30 rounded-lg"

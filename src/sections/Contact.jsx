@@ -1,25 +1,43 @@
 import { useState } from 'react';
-import GlowButton from './GlowButton';
+import "./GlowButton.css";
+
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    fullname: "",
+    phone: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send data to a server)
-    console.log(formData);
+
+    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfFaffJRDESb1BVow9LaGhrkqWBmo76TcnsZGdxswxfFFr9jA/formResponse";
+
+    const formParams = new URLSearchParams();
+    formParams.append("entry.1030368164", formData.fullname);
+    formParams.append("entry.1803834517", formData.phone);
+    formParams.append("entry.1094492886", formData.email);
+    formParams.append("entry.1432976933", formData.message);
+
+    try {
+      await fetch(googleFormUrl, {
+        method: "POST",
+        body: formParams,
+        mode: "no-cors",
+      });
+
+      alert("Message sent successfully!");
+      setFormData({ fullname: "", phone: "", email: "", message: "" }); 
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Failed to send message.");
+    }
   };
 
   return (
@@ -36,14 +54,15 @@ const ContactUs = () => {
       <div className="mx-auto md:w-2/3 lg:w-1/2">
         <div className="-m-2 flex flex-wrap">
           {/* Form */}
-          {/* <form onSubmit={handleSubmit} className="w-full flex flex-wrap">
+          { <form onSubmit={handleSubmit} className="w-full flex flex-wrap">
             <div className="w-1/2 p-2">
               <div className="relative">
-                <input
+                <input 
+                  required
                   type="text"
                   id="name"
-                  name="name"
-                  value={formData.name}
+                  name="fullname"
+                  value={formData.fullname}
                   onChange={handleChange}
                   className="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-2 px-3 text-xl leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
                   placeholder="Name"
@@ -52,13 +71,34 @@ const ContactUs = () => {
                   htmlFor="name"
                   className="absolute left-3 -top-6 bg-transparent text-lg leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-7 peer-focus:text-lg peer-focus:text-indigo-500"
                 >
-                  Name
+                  Full Name
                 </label>
               </div>
             </div>
             <div className="w-1/2 p-2">
               <div className="relative">
                 <input
+                  required
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-2 px-3 text-xl leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                  placeholder="Phone Number"
+                />
+                <label
+                  htmlFor="phone"
+                  className="absolute left-3 -top-6 bg-transparent text-lg leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-7 peer-focus:text-lg peer-focus:text-indigo-500"
+                >
+                  Phone Number
+                </label>
+              </div>
+            </div>
+            <div className="mt-2 w-full p-2">
+              <div className="relative">
+                <input
+                  required
                   type="email"
                   id="email"
                   name="email"
@@ -71,13 +111,14 @@ const ContactUs = () => {
                   htmlFor="email"
                   className="absolute left-3 -top-6 bg-transparent text-lg leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-7 peer-focus:text-lg peer-focus:text-indigo-500"
                 >
-                  Email
+                  Email Address
                 </label>
               </div>
             </div>
-            <div className="mt-4 w-full p-2">
+            <div className="mt-2 w-full p-2">
               <div className="relative">
                 <textarea
+                  required
                   id="message"
                   name="message"
                   value={formData.message}
@@ -93,18 +134,20 @@ const ContactUs = () => {
                 </label>
               </div>
             </div>
-            <div className="w-full p-2">
-              <button
-                type="submit"
-                className="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-6 text-xl text-white hover:bg-indigo-600 focus:outline-none"
-              >
-                Send Message
-              </button>
-              
-            </div>
 
-          </form> */}
-          <div className="w-full p-2"><GlowButton /></div>
+            <div className="w-full p-2 mt-4">    
+                <div className="center-container">
+                  <button className="glow-button"
+                  type="submit"
+                  >
+                    Send Message
+                  </button>
+              </div>
+            </div>
+          </form> }
+        </div>
+        
+        <div className="w-full p-2 mt-4">    
           {/* Footer */}
           <div className="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
             <a className="text-indigo-400 text-xl" href="mailto:example@email.com">
